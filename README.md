@@ -29,6 +29,8 @@ flowchart LR
   
 ![image](https://github.com/user-attachments/assets/a45755fc-c062-4665-a059-3b46c6bb9e51)
 
+
+
 ![image](https://github.com/user-attachments/assets/d6db1830-eb55-4b21-9e0b-cf239882e75f)
 
 
@@ -39,6 +41,8 @@ flowchart LR
 * **Amazon S3 (Transformed Data)**: Stores the cleaned and structured data for querying.
 
 ![image](https://github.com/user-attachments/assets/9387f90d-54cb-4083-8c89-636ae21f402c)
+
+
 
 ![image](https://github.com/user-attachments/assets/2a43a2ec-a2b3-49cf-b14d-89c8556384bf)
 
@@ -104,6 +108,8 @@ spotify-etl-pipeline/
    * Configure triggers (CloudWatch for extract, S3 object create for transform).
      
 ![image](https://github.com/user-attachments/assets/3b39f53c-f300-43af-abf5-246c88e8eb61)
+
+
      
 ![image](https://github.com/user-attachments/assets/6e94a178-7c03-4294-a12e-973907bc4d96)
 
@@ -128,6 +134,8 @@ spotify-etl-pipeline/
    * Use SQL to analyze your Spotify data.
   
      ![image](https://github.com/user-attachments/assets/4d399530-1912-4cde-83a1-0d5b16fb0fcf)
+
+
 
      ![image](https://github.com/user-attachments/assets/d5cd467e-da15-4c95-845f-f5d60c807a91)
 
