@@ -7,13 +7,17 @@ This project demonstrates an automated ETL (Extract, Transform, Load) pipeline u
 ---
 
 ## 🗺️ Architecture Overview
-Spotify API → Python Script → CloudWatch → Lambda (Extract) → S3 (Raw Data)
-                                             ↓
-                                   Lambda (Transform) → S3 (Transformed Data)
-                                                             ↓
-                                                       Glue Crawler
-                                                             ↓
-                                                  Glue Data Catalog → Athena
+flowchart LR
+    A[Spotify API] --> B[Python Script]
+    B --> C[CloudWatch]
+    C --> D[Lambda (Extract)]
+    D --> E[S3 (Raw Data)]
+    E --> F[Lambda (Transform)]
+    F --> G[S3 (Transformed Data)]
+    G --> H[Glue Crawler]
+    H --> I[Glue Data Catalog]
+    I --> J[Athena]
+
 🧩 Components
 
 ### 🔹 Extract
