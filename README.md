@@ -26,6 +26,7 @@ flowchart LR
 * **Python Script**: Contains logic to authenticate and pull data from Spotify API.
 * **Amazon CloudWatch**: Triggers extraction Lambda function on a daily schedule.
 * **AWS Lambda (Extraction)**: Executes Python script and writes raw JSON data to Amazon S3.
+![image](https://github.com/user-attachments/assets/a45755fc-c062-4665-a059-3b46c6bb9e51)
 
 ### 🔹 Transform
 
