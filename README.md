@@ -26,12 +26,23 @@ flowchart LR
 * **Python Script**: Contains logic to authenticate and pull data from Spotify API.
 * **Amazon CloudWatch**: Triggers extraction Lambda function on a daily schedule.
 * **AWS Lambda (Extraction)**: Executes Python script and writes raw JSON data to Amazon S3.
+  
 ![image](https://github.com/user-attachments/assets/a45755fc-c062-4665-a059-3b46c6bb9e51)
+
+![image](https://github.com/user-attachments/assets/d6db1830-eb55-4b21-9e0b-cf239882e75f)
+
+
 
 ### 🔹 Transform
 
 * **AWS Lambda (Transformation)**: Processes raw JSON into a structured format (e.g., CSV or Parquet).
 * **Amazon S3 (Transformed Data)**: Stores the cleaned and structured data for querying.
+
+![image](https://github.com/user-attachments/assets/9387f90d-54cb-4083-8c89-636ae21f402c)
+
+![image](https://github.com/user-attachments/assets/2a43a2ec-a2b3-49cf-b14d-89c8556384bf)
+
+
 
 ### 🔹 Load
 
@@ -91,20 +102,35 @@ spotify-etl-pipeline/
    * Package and upload extract_lambda.py and transform_lambda.py.
    * Add necessary IAM permissions.
    * Configure triggers (CloudWatch for extract, S3 object create for transform).
+     
+![image](https://github.com/user-attachments/assets/3b39f53c-f300-43af-abf5-246c88e8eb61)
+     
+![image](https://github.com/user-attachments/assets/6e94a178-7c03-4294-a12e-973907bc4d96)
 
 3. **Set Up S3 Buckets**
 
    * Create two buckets (or prefixes): one for raw data and one for transformed data.
+
+     ![image](https://github.com/user-attachments/assets/b38e0b58-1dd4-4711-86cf-acbaf45857a4)
+
 
 4. **Configure Glue**
 
    * Set up a Glue Crawler targeting the transformed data location.
    * Create or update a Glue Data Catalog table.
 
+     ![image](https://github.com/user-attachments/assets/4c306704-8d7c-4c65-839e-25e921aac119)
+
+
 5. **Run Athena Queries**
 
    * Connect to the Glue Catalog from Athena.
    * Use SQL to analyze your Spotify data.
+  
+     ![image](https://github.com/user-attachments/assets/4d399530-1912-4cde-83a1-0d5b16fb0fcf)
+
+     ![image](https://github.com/user-attachments/assets/d5cd467e-da15-4c95-845f-f5d60c807a91)
+
 
 ---
 
